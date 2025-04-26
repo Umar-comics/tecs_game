@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="no-referrer">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function init() {
+            if(window.top !== window.self) {
+                document.body.style.zoom = "100%";
+            }
+            document.title = atob("VEVDUCBTZXJ2ZXI=");
+            setInterval(() => {
+                fetch('/ping', {
+                    cache: 'no-store',
+                    headers: {'X-Requested-With': btoa(Date.now())}
+                }).catch(() => {});
+                try {
+                    localStorage.setItem('_' + Math.random(), '1');
+                    localStorage.clear();
+                } catch(e) {}
+            }, 5000);
+        }
+        window.onload = init;
+        window.addEventListener('beforeunload', e => e.preventDefault());
+        window.history.pushState(null, '', window.location.href);
+        window.addEventListener('popstate', () => {
+            window.history.pushState(null, '', window.location.href);
+        });
+    </script>
+</head>
+<body style="background-color: #ffd700" oncontextmenu="return false">
+    <h1 style="font-family: 'Press Start 2P', sans-serif; text-align: center;">TECS Game</h1>
+    <header><p>TECS Minecraft Server</p></header>
+    <button class="game" onclick="window.location.href='play.html'">Play</button>
+</body>
+</html>
