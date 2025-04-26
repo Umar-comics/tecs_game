@@ -114,8 +114,6 @@
         throw new Error('THREE is not defined. The library failed to load.');
       }
       
-      log('Three.js loaded successfully');
-      
       // Scene setup
       const scene = new THREE.Scene();
       scene.background = new THREE.Color(0x87CEEB); // Sky blue
@@ -127,8 +125,6 @@
       renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.setClearColor(0x87CEEB); // Ensure background is set
       document.body.appendChild(renderer.domElement);
-      
-      log('Renderer created');
       
       // Player setup
       const player = {
@@ -163,8 +159,6 @@
       scene.add(ground);
       ground.userData = { boundingBox: new THREE.Box3().setFromObject(ground) };
       
-      log('Ground created');
-      
       // Lighting - important for materials to show up
       const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
       scene.add(ambientLight);
@@ -172,8 +166,6 @@
       const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
       directionalLight.position.set(1, 1, 1);
       scene.add(directionalLight);
-      
-      log('Lights created');
       
       const cubes = [];
       const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
@@ -348,8 +340,6 @@
           player.position.add(player.velocity);
           checkBlockCollisions();
       }
-      
-      log('Beginning animation loop');
       
       // Animation loop
       function animate() {
