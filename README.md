@@ -1,9 +1,0 @@
-/ (root)
-├── index.html
-├── play.html
-├── style.css
-├── index.js
-├── package.json
-├── package-lock.json
-├── eslint-config.js
-└── README.md
